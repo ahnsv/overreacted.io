@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from '../assets/profile-pic.jpg';
+import profile from '../assets/profile.png';
 import { rhythm } from '../utils/typography';
 
 class Bio extends React.Component {
@@ -12,7 +12,7 @@ class Bio extends React.Component {
         }}
       >
         <img
-          src={profilePic}
+          src={profile}
           alt={`Dan Abramov`}
           style={{
             marginRight: rhythm(1 / 2),
@@ -23,9 +23,10 @@ class Bio extends React.Component {
           }}
         />
         <p style={{ maxWidth: 310 }}>
-          Personal blog by{' '}
-          <a href="https://mobile.twitter.com/dan_abramov">Dan Abramov</a>.{' '}
-          I&nbsp;explain with words and code.
+          세상 모든 걸 리뷰하는{' '}
+          <a href="https://blog.naver.com/ye_onny">여니의 블로그</a>. <br />
+          <a href="https://smartstore.naver.com/yeonnneee">여니네 가게</a>에도
+          놀러와주세요!
         </p>
       </div>
     );

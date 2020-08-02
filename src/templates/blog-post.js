@@ -116,6 +116,7 @@ class BlogPostTemplate extends React.Component {
       function escapeRegExp(str) {
         return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       }
+
       let translatedLink = '/' + lang + link;
       html = html.replace(
         new RegExp('"' + escapeRegExp(link) + '"', 'g'),
@@ -175,45 +176,9 @@ class BlogPostTemplate extends React.Component {
               )}
             </header>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <footer>
-              <p>
-                <a href={discussUrl} target="_blank" rel="noopener noreferrer">
-                  Discuss on Twitter
-                </a>
-                {` • `}
-                <a href={editUrl} target="_blank" rel="noopener noreferrer">
-                  Edit on GitHub
-                </a>
-              </p>
-            </footer>
           </article>
         </main>
         <aside>
-          <div
-            style={{
-              margin: '90px 0 40px 0',
-              fontFamily: systemFont,
-            }}
-          >
-            <Signup cta={post.frontmatter.cta} />
-          </div>
-          <h3
-            style={{
-              fontFamily: 'Montserrat, sans-serif',
-              marginTop: rhythm(0.25),
-            }}
-          >
-            <Link
-              style={{
-                boxShadow: 'none',
-                textDecoration: 'none',
-                color: 'var(--pink)',
-              }}
-              to={'/'}
-            >
-              Overreacted
-            </Link>
-          </h3>
           <Bio />
           <nav>
             <ul
@@ -269,7 +234,6 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         spoiler
-        cta
       }
       fields {
         slug

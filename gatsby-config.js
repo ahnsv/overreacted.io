@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Overreacted',
-    author: 'Dan Abramov',
-    description: 'Personal blog by Dan Abramov. I explain with words and code.',
+    title: '세상 모든걸 리뷰하는 여니',
+    author: 'ye_onny',
+    description:
+      '세상 모든것들을 리뷰 해요 세계 여행지 부터 맛있는 음식, 사랑하는 물건들도. \n 감성있는 사진들로 나만의 공간을 꿈꿔요. 솔직한 후기로 삶에 도움 되는 이야기들 가지고 가세요.  ',
     siteUrl: 'https://overreacted.io',
     social: {
       twitter: '@dan_abramov',
@@ -56,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-130227707-1`,
+        trackingId: `UA-174256104-1`,
       },
     },
     {

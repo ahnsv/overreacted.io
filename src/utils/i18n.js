@@ -58,6 +58,7 @@ export const loadFontsForCode = code => {
       import('../fonts/fonts-post.arabic.css');
       break;
     default:
+      import('../fonts/fonts-shared.ko.css');
       break;
   }
 };
